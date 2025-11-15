@@ -599,15 +599,14 @@ body {
 }
 
 .pr__img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 320px;
+  height: 200px;
   padding: 10px;
 }
 
 .pr__img img {
-  width: 90%;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
