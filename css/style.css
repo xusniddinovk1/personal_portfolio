@@ -609,6 +609,7 @@ body {
 .pr__img img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -631,7 +632,8 @@ body {
 .languages {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 .languages span {
