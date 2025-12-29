@@ -369,7 +369,7 @@ body {
   border-bottom: 1px solid #000;
 }
 .contact__link {
-  width: 100px;
+  width: 120px;
   text-align: center;
   padding: 9px;
   background-color: #000;
@@ -382,9 +382,9 @@ body {
   transition: 0.3s ease;
 }
 .download__link {
-  width: 120px;
+  width: 180px;
   text-align: center;
-  padding: 9px;
+  padding: 10px;
   background-color: #e6dddd;
   border-radius: 8px;
   color: #000;
@@ -444,7 +444,7 @@ body {
 }
 .about {
   padding: 4px;
-  width: 100px;
+  width: 120px;
   text-align: center;
   gap: 10px;
   border-radius: 10px;
@@ -458,6 +458,7 @@ body {
 }
 .about__description {
   width: 550px;
+  height: 200px;
   font-size: 15px;
 }
 .about__context h2 {
@@ -626,6 +627,7 @@ body {
 }
 
 .project__description {
+  height: 140px;
   font-size: 14px;
   color: #444;
 }
@@ -679,6 +681,27 @@ body {
 .project__live:hover {
   background: #005fa3;
 }
+.other__projects{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 40px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: #005fa3;
+  color: #fff;
+}
+.other__projects:hover{
+  background-color: #007acc;
+  transition: 0.3s ease;
+}
+.service1{
+  padding: 4px;
+  width: 160px;
+  text-align: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #e6dddd;
+}
 .service__section {
   padding: 80px 0px;
   display: flex;
@@ -693,6 +716,8 @@ body {
   flex-direction: column;
 }
 .services__title h2 {
+  width: 400px;
+  text-align: center;
   font-size: 34px;
   margin-top: 10px;
 }
