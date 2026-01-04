@@ -1010,396 +1010,164 @@ body {
   color: #0206dd;
   margin: 5px;
 }
+@media (max-width: 992px) {
 
-/* Media Queries for Phones and Tablets */
-
-/* Large Desktops */
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 700px;
-  }
-  
-  .hero__section {
-    padding: 50px 30px;
-  }
-  
-  .about__section {
-    padding: 90px 30px;
-  }
-  
-  .project__cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .service__cards {
-    flex-wrap: wrap;
-  }
-}
-
-/* Tablets and Medium Screens */
-@media screen and (max-width: 1024px) {
   body {
     max-width: 100%;
+    padding: 0 20px;
   }
-  
-  .container {
-    width: 90%;
-    top: 10px;
-    padding: 8px;
-  }
-  
-  .header__nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .header__link {
-    font-size: 14px;
-    padding: 6px 8px;
-  }
-  
+
+  /* HERO */
   .hero__section {
     flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
+    gap: 40px;
+    padding: 60px 0;
   }
-  
+
   .hero__context {
     width: 100%;
     align-items: center;
-  }
-  
-  .hero__title {
-    font-size: 32px;
-  }
-  
-  .hero__btns {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .contact__link{
-    width: 200px !important;
-    margin-bottom: 20px !important;
-  }
-
-  .location{
-    width: 200px !important;
-    border: 1px solid #000;
-  }
-  
-  .social-links {
-    justify-content: center;
-  }
-  
-  .image {
-    width: 350px;
-    height: auto !important;
-    margin-top: 30px;
-  }
-  
-  .about__section {
-    flex-direction: column;
-    padding: 60px 20px;
     text-align: center;
   }
-  
-  .about__context {
+
+  .hero__btns {
     width: 100%;
-    align-items: flex-start;
-    text-align: start;
-  }
-  
-  .about__description {
-    width: 100% !important;
-    height: auto !important;
-  }
-  
-  .about__title {
-    width: 100%;
-  }
-  
-  .about__cards {
-    width: 100%;
-    flex-wrap: wrap;
     justify-content: center;
   }
-  
-  .about__card__one, 
-  .about__card__two, 
-  .about__card__three {
-    margin: 10px;
+
+  .image {
+    width: 300px;
+    height: 360px;
   }
-  
+
+  /* ABOUT */
+  .about__section {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .about__context {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__description {
+    width: 100%;
+    height: auto;
+  }
+
+  .about__cards {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
   .about__image img {
-    width: 350px;
-    transform: translateY(40px);
+    transform: translateY(0);
+    width: 300px;
   }
-  
+
+  /* PROJECTS */
   .project__cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 0 20px;
   }
-  
+
   .pr__description {
     width: 100%;
   }
-  
+
+  /* SERVICES */
   .service__cards {
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px 20px;
+    gap: 25px;
   }
-  
-  .service__card {
-    margin: 10px;
-  }
-  
+
+  /* CONTACT */
   .contact1 {
-    width: 100%;
     flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  .contact__one {
     width: 100%;
-    align-items: center;
-  }
-  
-  .send__message {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .name, .email1, .text1 {
-    width: 100%;
-  }
-  
-  .footer {
-    padding: 20px 10px;
   }
 }
 
-/* Tablets and Small Screens */
-@media screen and (max-width: 768px) {
-  .header__nav {
-    gap: 5px;
+@media (max-width: 576px) {
+
+  /* HEADER */
+  .container {
+    width: 95%;
   }
-  
-  .header__link {
-    font-size: 12px;
-    padding: 5px 6px;
-  }
-  
+
+  /* HERO */
   .hero__title {
     font-size: 28px;
   }
-  
+
   .hero__description {
     font-size: 15px;
   }
-  
+
   .image {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 320px;
   }
-  
-  .about__card__one, 
-  .about__card__two, 
+
+  .hero__btns {
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: none;
+  }
+
+  /* ABOUT */
+  .about__title {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  .about__context h2 {
+    font-size: 22px;
+  }
+
+  .about__card__one,
+  .about__card__two,
   .about__card__three {
     width: 100%;
-    max-width: 250px;
+    max-width: 260px;
   }
-  
-  .about__image img {
-    width: 300px;
-  }
-  
+
+  /* PROJECTS */
   .project__cards {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
-  
-  .project__card {
-    max-width: 100%;
+
+  .pr__img {
+    width: 100%;
+    height: 180px;
   }
-  
+
+  /* SERVICES */
   .service__card {
     width: 100%;
     max-width: 280px;
   }
-  
+
+  /* CONTACT */
+  .contact__one {
+    width: 100%;
+  }
+
+  .send__message {
+    width: 100%;
+  }
+
+  .name,
+  .email1,
+  .text1 {
+    width: 100%;
+  }
+
+  /* FOOTER */
   .section__links {
     flex-wrap: wrap;
-  }
-}
-
-/* Phones */
-@media screen and (max-width: 480px) {
-  .container {
-    width: 95%;
-    padding: 5px;
-    border-radius: 15px;
-  }
-  
-  .header__nav {
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .header__link {
-    font-size: 14px;
-    padding: 8px 12px;
-    width: 80%;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  .hero__section {
-    padding: 20px 15px;
-  }
-  
-  .hero__title {
-    font-size: 24px;
-  }
-  
-  .hero__description {
-    font-size: 14px;
-  }
-  
-  .location {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .hero__btns {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-  }
-  
-  .contact__link, .download__link {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .social-links {
-    flex-wrap: wrap;
-  }
-  
-  .image {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .about {
-    width: 120px;
-  }
-  
-  .about__title {
-    font-size: 28px;
-  }
-  
-  .about__description {
-    font-size: 14px;
-  }
-  
-  .about__cards {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .about__card__one, 
-  .about__card__two, 
-  .about__card__three {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .about__image img {
-    width: 250px;
-    transform: translateY(30px);
-  }
-  
-  .pr__title {
-    font-size: 26px;
-  }
-  
-  .pr__description {
-    font-size: 14px;
-  }
-  
-  .service__title {
-    font-size: 20px;
-  }
-  
-  .service__text {
-    font-size: 14px;
-  }
-  
-  .contact__title {
-    font-size: 26px;
-  }
-  
-  .address, .email, .phone, .address__location {
-    width: 100%;
-  }
-  
-  .social-link {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .footer__container span {
-    font-size: 24px;
-  }
-  
-  .social__links1 {
-    gap: 15px;
-  }
-}
-
-/* Small Phones */
-@media screen and (max-width: 375px) {
-  .header__link {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-  
-  .hero__title {
-    font-size: 22px;
-  }
-  
-  .image {
-    width: 220px;
-    height: 220px;
-  }
-  
-  .about__title {
-    font-size: 24px;
-  }
-  
-  .about__cards {
-    gap: 10px;
-  }
-  
-  .pr__title {
-    font-size: 24px;
-  }
-  
-  .services__title h2 {
-    font-size: 28px;
-  }
-  
-  .contact__title {
-    font-size: 24px;
-  }
-  
-  .footer__container span {
-    font-size: 22px;
   }
 }
